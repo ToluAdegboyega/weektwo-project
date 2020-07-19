@@ -1,0 +1,103 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: rgb(22, 22, 22);
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.menu-one {
+    background-color: grey;
+    border: 1px solid black;
+    padding: 0px 0 15px 15px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.menu-one .menu-name {
+    border: 1px solid black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 120px;
+    color: white;
+    background-color: salmon;
+    padding: 5px;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.menu-two {
+    background-color: grey;
+    border: 1px solid black;
+    padding: 0px 0 15px 15px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menu-two .menu-name {
+    border: 1px solid black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 120px;
+    float: right;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.menu-three {
+    background-color: grey;
+    border: 1px solid black;
+    padding: 0px 0 15px 15px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menu-three .menu-name {
+    border: 1px solid black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 120px;
+    float: right;
+    color: white;
+    background-color: plum;
+    padding: 5px;
+    text-align: right;
+    align-self: flex-end;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
